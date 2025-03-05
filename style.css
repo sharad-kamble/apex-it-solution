@@ -53,9 +53,27 @@ body {
     border: none;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
+.dropdown-menu {
     display: block;
+    /* Always keep block to allow animation */
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    /* Start a bit lower */
+    transition: all 0.5s ease;
+    overflow: hidden;
 }
+
+.nav-item.dropdown:hover .dropdown-menu {
+    max-height: 500px;
+    /* Adjust height as needed */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    /* Slide to original position */
+}
+
 
 #bottomHeader {
     background-color: #000;
@@ -164,4 +182,103 @@ body {
 /* Disable underline for links contact with the custom class */
 .nav-link.no-underline::after {
     display: none;
+}
+
+.callback-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-group-text {
+    background: none;
+    border: none;
+}
+
+.btn-callback {
+    background-color: #d8a32e;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-animate {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-animate:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* .card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+} */
+
+/* .card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+} */
+
+
+
+/* Our Placed Students sliding*/
+@keyframes scroll {
+    /* 0% {
+        transform: translateX(100%);
+    } */
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* custome slider */
+.custom-slider {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider-track {
+    display: inline-flex;
+    animation: slideRight 10s linear infinite;
+}
+
+.slider-track .card {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 0 10px;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
