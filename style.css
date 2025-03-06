@@ -326,3 +326,45 @@ body {
 .accordion-button:focus {
     box-shadow: none;
 }
+
+/* footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer h5 {
+    font-weight: bold;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer .policy-links a {
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none !important;
+    /* Force remove underline */
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none !important;
+    /* Force no underline on hover */
+    color: #38BDF8;
+    /* Bootstrap blue color */
+}
