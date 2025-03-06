@@ -282,3 +282,31 @@ body {
         transform: translateX(0);
     }
 }
+
+
+.logo-slider {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-track {
+    display: flex;
+    gap: 20px;
+    animation: slide 10s linear infinite;
+    white-space: nowrap;
+}
+
+.logo-track img {
+    height: 50px;
+    object-fit: contain;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50%));
+    }
+}
