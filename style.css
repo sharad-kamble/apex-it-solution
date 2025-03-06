@@ -310,3 +310,19 @@ body {
         transform: translateX(calc(-50%));
     }
 }
+
+
+/* faq section */
+.accordion-button {
+    font-weight: bold;
+}
+
+.accordion-item {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
