@@ -114,11 +114,14 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./our-placement.html"><i class="fa-solid fa-award"></i> Our
-                                    Placements</a>
+                                <a class="nav-link" href="./our-placement.php">
+                                    <i class="fa-solid fa-award"></i> Our Placements
+                                </a>
                             </li>
+
+
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.html"><i class="fa-solid fa-info-circle"></i> About
+                                <a class="nav-link" href="./about-us.php"><i class="fa-solid fa-info-circle"></i> About
                                     Us</a>
                             </li>
                             <li class="nav-item">
@@ -533,7 +536,8 @@
                 <p class="fs-4 fw-bold">"Elevate Your Skills with Our Expert-Curated, Industry-Leading Courses"</p>
             </div>
 
-            <div class="row g-4"> <!-- Added g-4 for responsive spacing -->
+            <div class="row g-4">
+                <!-- Added g-4 for responsive spacing -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="card h-100 border-0 shadow">
                         <div class="position-relative">
@@ -1107,41 +1111,41 @@
 
     <!-- top nav toggle -->
     <script>
-        const toggler = document.getElementById('navbarToggler');
-        const icon = toggler.querySelector('i');
+    const toggler = document.getElementById('navbarToggler');
+    const icon = toggler.querySelector('i');
 
-        // Handle icon change on toggle
-        toggler.addEventListener('click', () => {
-            const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
+    // Handle icon change on toggle
+    toggler.addEventListener('click', () => {
+        const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
 
-            if (isExpanded) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
+        if (isExpanded) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
     </script>
 
     <!-- courses -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdownToggle = document.getElementById("navbarDropdown");
-            const dropdownMenu = dropdownToggle.nextElementSibling;
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdownToggle = document.getElementById("navbarDropdown");
+        const dropdownMenu = dropdownToggle.nextElementSibling;
 
-            dropdownToggle.addEventListener("click", function (e) {
-                e.preventDefault();
-                dropdownMenu.classList.toggle("show");
-            });
-
-            // Close dropdown on clicking outside
-            document.addEventListener("click", function (e) {
-                if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                    dropdownMenu.classList.remove("show");
-                }
-            });
+        dropdownToggle.addEventListener("click", function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle("show");
         });
+
+        // Close dropdown on clicking outside
+        document.addEventListener("click", function(e) {
+            if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove("show");
+            }
+        });
+    });
     </script>
 
 

@@ -554,41 +554,41 @@
 
     <!-- top nav toggle -->
     <script>
-        const toggler = document.getElementById('navbarToggler');
-        const icon = toggler.querySelector('i');
+    const toggler = document.getElementById('navbarToggler');
+    const icon = toggler.querySelector('i');
 
-        // Handle icon change on toggle
-        toggler.addEventListener('click', () => {
-            const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
+    // Handle icon change on toggle
+    toggler.addEventListener('click', () => {
+        const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
 
-            if (isExpanded) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
+        if (isExpanded) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
     </script>
 
     <!-- courses -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdownToggle = document.getElementById("navbarDropdown");
-            const dropdownMenu = dropdownToggle.nextElementSibling;
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdownToggle = document.getElementById("navbarDropdown");
+        const dropdownMenu = dropdownToggle.nextElementSibling;
 
-            dropdownToggle.addEventListener("click", function (e) {
-                e.preventDefault();
-                dropdownMenu.classList.toggle("show");
-            });
-
-            // Close dropdown on clicking outside
-            document.addEventListener("click", function (e) {
-                if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-                    dropdownMenu.classList.remove("show");
-                }
-            });
+        dropdownToggle.addEventListener("click", function(e) {
+            e.preventDefault();
+            dropdownMenu.classList.toggle("show");
         });
+
+        // Close dropdown on clicking outside
+        document.addEventListener("click", function(e) {
+            if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove("show");
+            }
+        });
+    });
     </script>
 
 
