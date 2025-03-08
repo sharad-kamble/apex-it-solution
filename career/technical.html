@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap">
     <!-- Custom CSS file-->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
     <!-- GeistSans_3a0388 font-->
     <link rel="stylesheet" href="https://your-font-cdn.com/GeistSans_3a0388.css">
 
@@ -37,7 +37,7 @@
                     <div class="container-fluid">
                         <!-- Logo -->
                         <a class="navbar-brand d-flex align-items-center" href="#">
-                            <img src="./images/logo.jpeg" alt="Logo" width="150" height="40" class="img-fluid">
+                            <img src="../images/logo.jpeg" alt="Logo" width="150" height="40" class="img-fluid">
                         </a>
 
                         <!-- Custom Hamburger menu button -->
@@ -82,7 +82,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav gap-3 ">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                                <a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -142,8 +142,16 @@
                                 <a class="nav-link" href="#"><i class="fa-solid fa-chalkboard-teacher"></i> Corporate
                                     Training</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i> Career</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle " href="#" id="navbarDropdown" role="button">
+                                    <i class="fa-solid fa-briefcase"></i> Career
+                                </a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">All-Batches</a></li>
+                                    <li><a class="dropdown-item" href="#">Online-Batches</a></li>
+
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -151,48 +159,178 @@
             </div>
         </div>
     </header>
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-4 text-white p-4 rounded-start" style="background-color: #4D55CC;">
-                <div class="text-center">
-                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="Contact Image" class="img-fluid mb-2">
-                    <h2>Send us a message</h2>
-                    <p>Come for a visit to our office</p>
-                    <img src="./images/contact-us.svg" alt="" class="img-fluid">
-                    <div class="mt-3">
-                        <h5 class="text-start">Office : </h5>
-                        <p class="text-start">
-                            101, 104 1st Floor, Stellar Spaces, Kharadi South Main Road, opp. Zensar, IT Park,
-                            Kharadi, Pune, Maharashtra 411014</p>
-                        <h5 class="text-start">Call us :</h5>
-                        <p class="text-start">Mob: +91 7030327453 ,
 
-                            +91 7030327453</p>
+    <div class="container py-5">
+        <h2 class="text-center mb-4">See our areas of Work & Opportunities for you</h2>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Data Science Trainer</h5>
+                        <p class="card-text">We are seeking a passionate and experienced Data Science Trainer to
+                            develop
+                            and deliver comprehensive training programs in data science and related fields. As a Data
+                            Science Trainer, you will play a crucial role in shaping the next generation of data
+                            scientists by imparting industry-relevant knowledge and skills.</p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 bg-white p-4 rounded-end shadow">
-                <form>
-                    <div class="mb-3">
-                        <label for="fname" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">AWS Trainer</h5>
+                        <p class="card-text">We are seeking an experienced AWS Trainer to join our team and deliver
+                            high-quality training sessions on AWS cloud services. As an AWS Trainer, you will be
+                            responsible for designing, developing, and delivering training programs that enable
+                            participants to acquire AWS skills and certifications.</p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
                     </div>
-                    <div class="mb-3">
-                        <label for="lname" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Java Trainer</h5>
+                        <p class="card-text">As a Java Trainer, you will play a pivotal role in delivering comprehensive
+                            and engaging training sessions to aspiring Java developers and professionals. Your primary
+                            responsibility will be to impart knowledge, share industry best practices, and equip
+                            participants with the skills needed to excel in Java development.</p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-3">
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">React Js Trainer</h5>
+                        <p class="card-text">We are seeking an experienced React.js Trainer to join our dynamic team. As
+                            a React.js Trainer, you will be responsible for delivering high-quality training sessions
+                            and workshops focused on React.js fundamentals and advanced concepts. You will play a key
+                            role in shaping the skills and capabilities of aspiring developers and seasoned
+                            professionals looking to enhance their expertise in React.js.</p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
                     </div>
-                    <div class="mb-3">
-                        <label for="comment" class="form-label">Comment</label>
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Power Bi Trainer</h5>
+                        <p class="card-text">
+                            Looking for a knowledgeable and passionate Power BI Trainer to design and deliver engaging
+                            training programs to our clients and internal teams. The ideal candidate will have hands-on
+                            experience with Power BI and a strong ability to communicate complex concepts effectively.
+                        </p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
                     </div>
-                    <div class="d-grid row-cols-lg-3">
-                        <button type="submit" class="btn btn-primary" style="background-color: #4D55CC;">Submit</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Data Analytics Trainer</h5>
+                        <p class="card-text">As a Data Analytics Trainer, you will be responsible for designing and
+                            delivering training programs that enhance the skills and capabilities of individuals in the
+                            field of data analytics. You will play a pivotal role in educating and empowering our
+                            workforce or clients to leverage data effectively and make informed business decisions.</p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
                     </div>
-                </form>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-3">
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">DevOps Trainer</h5>
+                        <p class="card-text">We are looking for an experienced DevOps Trainer to conduct training
+                            sessions on DevOps practices, tools, and methodologies. The trainer should have expertise in
+                            CI/CD, automation, cloud platforms, and containerization technologies to guide learners in
+                            mastering modern DevOps workflows.</p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Java Fullstack Trainer</h5>
+                        <p class="card-text">
+                            We are seeking a skilled Java Fullstack Trainer to deliver training sessions on Java, Spring
+                            Boot, frontend frameworks like React/Angular, and database management. The trainer will help
+                            learners build scalable and efficient fullstack applications.
+                        </p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Business Analyst Trainer</h5>
+                        <p class="card-text">We are looking for a detail-oriented Business Analyst Trainer to train
+                            individuals on business analysis concepts, requirement gathering, and business process
+                            modeling. The ideal candidate should have experience in working with stakeholders to
+                            optimize business strategies.</p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Data Science with AI Trainer</h5>
+                        <p class="card-text">We are hiring a Data Science with AI Trainer to train aspiring
+                            professionals in data science, artificial intelligence, and machine learning concepts. The
+                            trainer should have hands-on experience in Python, deep learning frameworks, and AI model
+                            development.</p>
+                        <p class="text-black  h-auto "><span class="text-black fw-bold ">Employment
+                                Type:</span> Full Time, Part Time</p>
+                        <p class="text-black"><span class="text-black fw-bold ">Experience
+                                :</span> B.Tech/B.E. in Electronics Telecommunication, Computers, Any Graduate</p>
+                        <a href="#" class="btn text-white" style="background-color: #A051F5;">Apply Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
