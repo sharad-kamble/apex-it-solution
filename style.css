@@ -598,10 +598,14 @@ footer a:hover {
     /* Limit dropdown height */
     overflow-y: auto;
     border: none;
-    border: none;
-    outline: none;
 
     /* Enable vertical scrolling */
+}
+
+.nav-link:focus,
+.dropdown-item:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 
