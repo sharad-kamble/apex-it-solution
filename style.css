@@ -598,6 +598,9 @@ footer a:hover {
     /* Limit dropdown height */
     overflow-y: auto;
     border: none;
+    border: none;
+    outline: none;
+
     /* Enable vertical scrolling */
 }
 
