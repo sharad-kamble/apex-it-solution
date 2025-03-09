@@ -617,3 +617,56 @@ footer a:hover {
         margin: 0;
     }
 }
+
+
+
+
+
+
+.btn-purple {
+    background-color: #8A2BE2;
+    color: #fff;
+}
+
+.btn-purple:hover {
+    background-color: #6A1CB0;
+}
+
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #E6CCFF;
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-sidebar a {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.social-sidebar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .social-sidebar img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #carouselExampleAutoplay .carousel-inner .carousel-item {
+        height: 100vh;
+    }
+}
