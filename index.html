@@ -80,19 +80,21 @@
                     </button>
                     <!-- Collapsible navigation links -->
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav gap-3 ">
+                        <ul class="navbar-nav gap-3">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
                             </li>
 
+                            <!-- Our Courses Dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownCourses"
+                                    role="button" data-bs-toggle="dropdown">
                                     <i class="fa-solid fa-graduation-cap"></i> Our Courses
                                 </a>
-                                <ul class="dropdown-menu mt-3 p-3" style="background-color: #D6B3FF; min-width: 400px;"
-                                    aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu mt-3 p-3" style="background-color: #D6B3FF; min-width: 600px;"
+                                    aria-labelledby="navbarDropdownCourses">
                                     <div class="row">
-                                        <div class="col-lg-5">
+                                        <div class="col-lg-6">
                                             <li><a class="dropdown-item" href="#">Data Science</a></li>
                                             <li><a class="dropdown-item" href="#">Power BI</a></li>
                                             <li><a class="dropdown-item" href="#">React.js</a></li>
@@ -100,37 +102,39 @@
                                             <li><a class="dropdown-item" href="#">Microsoft Azure</a></li>
                                             <li><a class="dropdown-item" href="#">Business Analyst</a></li>
                                         </div>
-                                        <div class="col-lg-7">
+                                        <div class="col-lg-6">
                                             <li><a class="dropdown-item" href="#">Data Analyst</a></li>
                                             <li><a class="dropdown-item" href="#">AWS with DevOps</a></li>
                                             <li><a class="dropdown-item" href="#">Java Development</a></li>
                                             <li><a class="dropdown-item" href="#">Full Stack Web Development</a></li>
                                             <li><a class="dropdown-item" href="#">Oracle SQL and PLSQL</a></li>
-                                            <li><a class="dropdown-item" href="#">test</a></li>
+                                            <li><a class="dropdown-item" href="#">Test</a></li>
                                         </div>
                                     </div>
                                 </ul>
+
                             </li>
 
+                            <!-- Batches Dropdown -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link active dropdown-toggle " href="#" id="navbarDropdown" role="button">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownBatches"
+                                    role="button" data-bs-toggle="dropdown">
                                     <i class="fa-solid fa-calendar-days"></i> Batches
                                 </a>
-                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
-                                    aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF; min-width: auto;"
+                                    aria-labelledby="navbarDropdownBatches">
                                     <li><a class="dropdown-item" href="#">All-Batches</a></li>
                                     <li><a class="dropdown-item" href="#">Online-Batches</a></li>
                                     <li><a class="dropdown-item" href="#">Offline-Batches</a></li>
                                     <li><a class="dropdown-item" href="#">Hybrid-Batches</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="./our-placement.html">
                                     <i class="fa-solid fa-award"></i> Our Placements
                                 </a>
                             </li>
-
-
                             <li class="nav-item">
                                 <a class="nav-link" href="./about-us.html"><i class="fa-solid fa-info-circle"></i> About
                                     Us</a>
@@ -141,17 +145,24 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./corporate-training.html"><i
-                                        class="fa-solid fa-chalkboard-teacher"></i> Corporate
-                                    Training</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./career/technical.html"><i class="fa-solid fa-briefcase"></i>
-                                    Career</a>
+                                        class="fa-solid fa-chalkboard-teacher"></i> Corporate Training</a>
                             </li>
 
-
+                            <!-- Career Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="./career/technical.html"
+                                    id="navbarDropdownCareer" role="button" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-briefcase"></i> Career
+                                </a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF; min-width: auto;"
+                                    aria-labelledby="navbarDropdownCareer">
+                                    <li><a class="dropdown-item" href="#">Technical Roles</a></li>
+                                    <li><a class="dropdown-item" href="#">Non-Technical Roles</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
+
                 </nav>
             </div>
         </div>
