@@ -878,3 +878,10 @@ footer a:hover {
         transform: translateX(-100%);
     }
 }
+
+
+@media (max-width: 768px) {
+    #careerCarousel .carousel-item .col-lg-6 img {
+        margin-bottom: 20px;
+    }
+}
