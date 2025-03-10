@@ -33,7 +33,7 @@
     <header>
         <div id="topHeader">
             <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg ">
+                <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <!-- Logo -->
                         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -62,11 +62,72 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </nav>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bookSeatModal" tabindex="-1" aria-labelledby="bookSeatModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookSeatModalLabel">Book a Seat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Left side image -->
+                            <div class="col-lg-6 d-none d-lg-block">
+                                <img src="./images/bookseat.png" alt="Seat Booking Image" class="img-fluid rounded-5">
+                            </div>
+
+                            <!-- Right side form -->
+                            <div class="col-lg-6 col-12">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullName"
+                                            placeholder="Enter your Full Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mobileNumber" class="form-label">Mobile Number</label>
+                                        <input type="tel" class="form-control" id="mobileNumber"
+                                            placeholder="Enter your mobile number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="emailId" class="form-label">Email ID</label>
+                                        <input type="email" class="form-control" id="emailId"
+                                            placeholder="Enter your email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="course" class="form-label">Course</label>
+                                        <select class="form-select" id="course">
+                                            <option>Select Course</option>
+                                            <option>Web Development</option>
+                                            <option>Data Science</option>
+                                            <option>Software Testing</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mode" class="form-label">Mode</label>
+                                        <select class="form-select" id="mode">
+                                            <option>Select Mode</option>
+                                            <option>Online</option>
+                                            <option>Offline</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn w-100"
+                                        style="background-color: #A051F5;">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <!-- Bottom Nav section -->
@@ -1282,7 +1343,22 @@
     </script>
 
 
+    <script>
+        // Show the modal 2 seconds after the page reloads
+        window.onload = function () {
+            setTimeout(() => {
+                var bookSeatModal = new bootstrap.Modal(document.getElementById('bookSeatModal'));
+                bookSeatModal.show();
+            }, 1000);
+        };
 
+        // Show modal on link click
+        document.getElementById('bookSeatLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            var bookSeatModal = new bootstrap.Modal(document.getElementById('bookSeatModal'));
+            bookSeatModal.show();
+        });
+    </script>
 
 
 
