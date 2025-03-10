@@ -885,3 +885,126 @@ footer a:hover {
         margin-bottom: 20px;
     }
 }
+
+
+/* highlights */
+
+.highlight-card {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.highlight-card:hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateX(10px);
+    /* Slide right on hover */
+}
+
+.highlight-card:hover .icon-wrapper {
+    background-color: #fff;
+}
+
+.highlight-card:hover .icon-wrapper i {
+    color: #000;
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: #A051F5;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.icon-wrapper i {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+/* about imgs */
+.about-imgs {
+    width: 100%;
+    /* Make it responsive */
+    max-width: 400px;
+    /* Limit maximum width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Optional: rounded corners */
+}
+
+
+
+.marquee-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+}
+
+.testimonial-card {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.5rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause scrolling on hover */
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+/* Duplicate content for seamless scrolling */
+.marquee-content::after {
+    content: attr(data-duplicate);
+    display: inline-flex;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-card {
+        max-width: 90%;
+        min-height: 300px;
+    }
+}
