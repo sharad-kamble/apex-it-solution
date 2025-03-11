@@ -1026,3 +1026,66 @@ footer a:hover {
         min-height: 300px;
     }
 }
+
+
+
+
+@media (max-width: 576px) {
+    section {
+        padding: 0 !important;
+        margin: 0 !important;
+        min-height: auto !important;
+    }
+
+    .about-hero {
+        padding: 0 !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    .container-fluid,
+    .row,
+    .col-12 {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .text-light {
+        padding: 1rem !important;
+        /* Add a small padding for readability */
+    }
+}
+
+
+
+
+/* about card */
+.about-icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* contact us  */
+.btn-purple {
+    background-color: #6f42c1;
+    color: #fff;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #5a35a0;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
