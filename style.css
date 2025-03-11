@@ -856,15 +856,15 @@ footer a:hover {
 /* hero-img  */
 @media (max-width: 768px) {
     .hero-img {
-        height: auto;
+        /* height: auto; */
         /* Let height adjust naturally */
-        width: 100%;
+        /* width: 100%; */
         /* Full width */
-        min-height: 300px;
+        /* min-height: 300px; */
         /* Set a minimum height */
-        object-fit: cover;
-        object-position: 72% 100%;
-        padding: 10px;
+        /* object-fit: cover;
+        object-position: 100% 100%;
+        padding: 10px; */
         /* Maintain aspect ratio and fill container */
     }
 }
@@ -1115,5 +1115,50 @@ footer a:hover {
     font-weight: bold;
     color: #FFC107;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 
+
+managment program skills covered */
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #f0b13e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* Center horizontally */
+}
+
+.icon-circle img {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.skill-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #f0b13e;
+    font-weight: bold;
+}
+
+
+/* Our Technical Expertise */
+.icon-section i {
+    font-size: 24px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.service-card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
     margin-bottom: 20px;
 }
