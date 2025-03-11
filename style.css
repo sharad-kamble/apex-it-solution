@@ -851,6 +851,24 @@ footer a:hover {
     }
 }
 
+
+
+/* hero-img  */
+@media (max-width: 768px) {
+    .hero-img {
+        height: auto;
+        /* Let height adjust naturally */
+        width: 100%;
+        /* Full width */
+        min-height: 300px;
+        /* Set a minimum height */
+        object-fit: cover;
+        object-position: 72% 100%;
+        padding: 10px;
+        /* Maintain aspect ratio and fill container */
+    }
+}
+
 /* logo carousel */
 .logo-carousel-container {
     overflow: hidden;
