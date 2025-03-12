@@ -853,21 +853,24 @@ footer a:hover {
 
 
 
-/* hero-img  */
+
+
+
+
+/* Show the mobile image only on small screens */
 @media (max-width: 768px) {
-    .hero-img {
-        /* height: auto; */
-        /* Let height adjust naturally */
-        /* width: 100%; */
-        /* Full width */
-        /* min-height: 300px; */
-        /* Set a minimum height */
-        /* object-fit: cover;
-        object-position: 100% 100%;
-        padding: 10px; */
-        /* Maintain aspect ratio and fill container */
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 }
+
 
 /* logo carousel */
 .logo-carousel-container {
