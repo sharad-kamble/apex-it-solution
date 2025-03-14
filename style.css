@@ -1203,3 +1203,58 @@ request homepage section */
         display: block;
     }
 }
+
+/* 
+our placed student cards  */
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.scrolling-wrapper {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+    min-width: calc(200px * 6 + 20px * 5);
+    /* 6 cards with margin */
+}
+
+.scrolling-wrapper .col {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Scroll halfway, then loop */
+    }
+}
+
+
+/*  righ t to left placed card[ */
+.scroll-container-custom {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.scrolling-wrapper-placed {
+    display: inline-flex;
+    animation: scrollRightToLeft 40s linear infinite;
+}
+
+@keyframes scrollRightToLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
