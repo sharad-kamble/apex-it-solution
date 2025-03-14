@@ -100,6 +100,18 @@ body {
     transition: none !important;
 }
 
+
+
+@media (max-width: 768px) {
+    .center-mobile-nav {
+
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
 /* Remove outline, border, and focus styles */
 .navbar-toggler {
     border: none;
