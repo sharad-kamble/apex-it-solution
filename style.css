@@ -864,7 +864,13 @@ footer a:hover {
 }
 
 /* Show the mobile image only on small screens */
+/* Mobile view adjustments */
 @media (max-width: 768px) {
+    #careerCarousel .carousel-item {
+        height: 100vh;
+        /* Full viewport height on mobile */
+    }
+
     .desktop-img {
         display: none;
     }
@@ -872,11 +878,12 @@ footer a:hover {
     .mobile-img {
         display: block;
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        height: 100%;
+        /* Full height */
+        object-fit: cover;
+        /* Fill the container */
     }
 }
-
 
 
 /* logo carousel */
@@ -1169,4 +1176,21 @@ h2 {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+
+/* 
+
+request homepage section */
+/* Ensure padding works in mobile view */
+@media (max-width: 768px) {
+    .content-container {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .carousel-item {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
 }
